@@ -26,10 +26,123 @@ html {
 }
 
 body {
-  font-family: "Inter", sans-serif;
   font-family: "Lexend Deca", sans-serif;
   display: grid;
   place-content: center;
   min-height: 100svh;
   line-height: 1.5;
+  background-color: var(--dark-blue-main-bg);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  max-width: 33rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: var(--dark-blue-card-bg);
+}
+
+.content-wrapper {
+  order: 2;
+  padding: 4rem 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.img-wrapper {
+  position: relative;
+}
+.img-wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+.img-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #5d0097;
+  opacity: 0.6;
+}
+
+.heading {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  color: var(--white);
+}
+
+.heading-violet {
+  color: var(--soft-violet);
+}
+
+.intro-text {
+  color: var(--transparent-white-stat-headings);
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.statistics {
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  margin-block-start: 1.8rem;
+}
+
+.stat-value {
+  color: var(--white);
+  font-size: 2.4rem;
+  font-family: "Inter", sans-serif;
+}
+
+.stat-type {
+  color: var(--transparent-white-stat-headings);
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+@media screen and (min-width: 1440px) {
+  .main {
+    display: flex;
+    flex-direction: row;
+    max-width: 115rem;
+  }
+
+  .content-wrapper {
+    order: -1;
+    padding: 8rem 12rem 6rem 6rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.4rem;
+    flex: 0.8;
+  }
+
+  .img-wrapper {
+    flex: 1;
+  }
+
+  .heading {
+    font-size: 3.6rem;
+  }
+
+  .intro-text {
+    font-size: 1.6rem;
+  }
+
+  .statistics {
+    flex-direction: row;
+    row-gap: unset;
+    column-gap: 7rem;
+    justify-content: flex-start;
+    margin-block-start: 3.6rem;
+  }
+
+  .stat-type {
+    font-size: 1.3rem;
+  }
 }

@@ -1,6 +1,6 @@
 # Frontend Mentor - Profile card component solution
 
-This is a solution to the [Profile card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ### The challenge
 
@@ -12,7 +12,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/JimTK16/stats-preview-card-component
-- Live Site URL: https://profile-card-component-by-jim.netlify.app/
+- Live Site URL: https://stats-preview-card-component-by-jim.netlify.app/
 
 ## My process
 
@@ -26,4 +26,5 @@ Users should be able to:
 
 ### What I learned
 
-- Add multiple background images and position them to match the design.
+- Apply an overlay color over hero image.
+- Using order property to change the order of flex items.
